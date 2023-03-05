@@ -276,7 +276,7 @@ class ClockView(
         for(i in 1..12){
             canvas?.save()
             val textBound = Rect()
-            canvas?.translate(0F, (-clockRadius + widthBigPoints + widthSmallPoints + widthClockStroke * 2 + sizeNumbs / 5))
+            canvas?.translate(0F, (-clockRadius + widthBigPoints + widthSmallPoints + widthClockStroke * 2))
             val text: String = i.toString()
             numbsPaint.getTextBounds(text, 0, text.length, textBound)
             canvas?.rotate(-i*30F)
